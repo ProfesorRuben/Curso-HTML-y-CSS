@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3c.org/1999/xhtml" lang="es" xml:lang="es" > 
+<html>
+<head>
+<title> calculadora jorge por funciones </title>
+<meta charset="utf-8" >
+<style type="text/css"> <!-- para incluir css en archivo aparte <link rel="stylesheet" type="text/css" href="/css/estilos.css"> -->
+
+p { 
+	font-family: verdana; 
+	font-size: 14px; 
+	color: green }
+	
+table { 
+	background-color: silver ;
+	border: 1px solid black;
+}
+h2{
+	color:gray;
+	
+}
+.fondoazul{
+	background:aqua;
+}
+.numero{
+	font-size: 16px;
+	color:black;
+	weight:bold;
+	background:gray;
+}
+.resultado{
+	font-size: 16px;
+	font-family: arial;
+	font-bold: weight;
+	color:navy;
+}
+
+</style>
+</head>
+<body>
+<br></br>
+<h2>CALCULADORA DE NÚMEROS PHP </h2> 
+
+<form name="FormCalculadora" method="post" action="" >
+
+<fieldset>
+
+<legend>Introduce valores</legend>
+	<label class="numero" >Número 1 </label><input class="fondoazul" type="text" size="4" name="num1" />  
+	<label class="numero" >Número 2 </label><input class="fondoazul" type="text" size="4" name="num2" />
+
+</fieldset>
+
+<fieldset>
+	<legend>Introduce Operación</legend>
+	<input type="radio" name="Op" value="suma"/> Suma
+	<input type="radio" name="Op" value="resta"/> Resta
+	<input type="radio" name="Op" value="multi" /> Multiplicación
+	<input type="radio" name="Op" value="divi" /> División
+	<input type="radio" name="Op" value="modu" /> Módulo
+	<br><br/>
+	<Input type="reset" name="borrar" value="Borrar Datos" />
+	<input type="submit" name="enviar" value="Calcular" />
+</fieldset>
+
+</form>
+<br><br/>
+
+
+
+<fieldset>
+<legend>Resultado</legend>
+
+<?php
+
+function suma($p1,$p2){
+	$resul=$p1+$p2;
+	echo "<p class=\"resultado\">$resul</p>";
+}
+function resta($p1,$p2){
+	$resul=$p1-$p2;
+	echo "<p class=\"resultado\">$resul</p>";
+}
+function multi($p1,$p2){
+	$resul=$p1*$p2;
+	echo "<p class=\"resultado\">$resul</p>";
+}
+function divi($p1,$p2){
+	$resul=$p1/$p2;
+	echo "<p class=\"resultado\">$resul</p>";
+}
+function modu($p1, $p2){
+	$resul=$p1%$p2;
+	echo "<p class=\"resultado\">$resul</p>";
+}	
+
+
+	
+if (isset($_POST["enviar"])){
+	
+	$n1=$_POST["num1"];
+	$n2=$_POST["num2"];
+	$op=$_POST["Op"];
+
+/*	
+	if ($op=="suma"){suma($n1,$n2);} 
+	if ($op=="resta"){resta($n1,$n2);}
+	if ($op=="multi"){multi($n1,$n2);}
+	if ($op=="divi"){divi($n1,$n2);}
+	if ($op=="modu"){ modu($n1,$n2);}
+
+*/
+switch ($op){
+case "suma": suma($n1,$n2); break;
+case "resta": resta($n1,$n2); break;
+case "multi": multi($n1,$n2); break;
+case "divi": divi($n1, $n2); break;
+case "modu": modu($n1,$n2);	break;
+default: echo " Operación no válida";  // en este caso no necesario
+}
+
+}
+
+?>
+
+</fieldset>
+
+</body>
+
+
+
+</html>

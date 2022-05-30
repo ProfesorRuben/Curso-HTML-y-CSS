@@ -1,0 +1,35 @@
+
+// menu con paso parametro por GET
+
+<div class='navbar' id='menu'> 
+	<div class='btmenu' ><a href='index.php'>HOME</a></div>
+	<div class='btmenu' ><a href='index.php?page=1'>Página1</a></div>
+	<div class='btmenu' ><a href='index.php?page=2'>Página2</a></div>
+	<div class='btmenu' ><a href='index.php?page=1'>Página3</a></div>
+	<div class='btmenu' ><a href='index.php?page=1'>Página4</a></div>
+</div>
+
+
+
+<!-- en clase contenedor recibimos el para metro por GET
+ y según el valor requerimos incluir una página u otra
+-->
+
+<div class='contenedor' id='contenedor'>
+	<?php
+	
+	if ($_GET['page'] == "1" ){
+		include("contenido/pagina1.html");
+	}else if ($_GET['page'] == "2" ){
+		include("contenido/pagina2.html");
+	}else if ($_GET['page'] == "3" ){
+		include("contenido/pagina3.html");
+	}else if ($_GET['page'] == "4" ){
+		include("contenido/pagina4.html");	
+		
+	}else {include("home.html");
+	}
+	
+	<?
+	
+</div>

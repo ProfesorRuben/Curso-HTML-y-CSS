@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+var numeros= new Array(8);
+var f;
+var suma=0, suma36=0, mayores50=0;
+
+for (f = 0; f < numeros.length; f++) {
+    numeros[f]=parseInt(Math.random()*50+20);//numeros aleatorios entre 20 y 50
+    document.write("<br>El numero en la posicion "+f+" es "+numeros[f]);
+}
+for (f =0; f < numeros.length; f++) {
+  suma+=numeros[f];
+  if (numeros[f]>36) {
+    suma36+=numeros[f];
+  }
+  if (numeros[f]>50) {
+    mayores50++;
+  }
+}
+document.write("<br>La suma total de todos es "+suma);
+document.write("<br>La suma de los mayores a 36 es "+suma36);
+document.write("<br>El total de los mayores a 50 es "+mayores50);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+Trabajo Final
+Desarrolla una web con al menos 3 páginas que comparten la misma hoja de estilos css. 
+
+Las tres páginas tienen la misma estructura pero diferente contenido y a través de un menú de navegación presente en todas las páginas, nos movemos por ellas.
+
+Incluye como contenido elementos vistos en html, como parrafos, tablas, formularios, imágenes...
+
+Define la maquetación usando flexbox y aplica los estilos estudiados en CSS_YA.

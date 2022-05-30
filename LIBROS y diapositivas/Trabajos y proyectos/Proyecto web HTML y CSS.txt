@@ -1,0 +1,18 @@
+Proyecto web HTML/CSS
+Realiza un proyecto web aplicando los conceptos de HTML y CSS trabajados en este primer trimestre.
+
+Características básicas del proyecto:
+
+- Sitio web con 4-5 página ( una de ellas con un formulario)
+
+- Layout con etiquetas div.
+
+- CSS en archivo externo estilos.css
+
+- Aplica los conceptos que hemos desarrollado en clase de  HTML y CSS: párrafos, imágenes, enlaces, listas , tablas, formularios... 
+
+No olvides llamar a la primera página del proyecto index.html
+
+Se valora la funcionalidad y diseño del sitio web.
+
+Entrega una carpeta comprimida con todos los elementos del proyecto organizados.
