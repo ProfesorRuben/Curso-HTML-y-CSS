@@ -1,0 +1,42 @@
+- Modelo de Cajas: https://www.youtube.com/watch?v=SKkKLi1wAos
+
+- Posicionamiento de Cajas: https://www.youtube.com/watch?v=JwyjHyGOgmg
+
+ - Propiedad Display: https://www.youtube.com/watch?v=fr71i33558U
+
+ - Textos: https://www.youtube.com/watch?v=JwyjHyGOgmg
+
+- Sombras o Box-shadow: https://www.youtube.com/watch?v=cJZXAQ-JUc4
+
+- Imágenes de Fondo: https://www.youtube.com/watch?v=twjSBe7iQ6g
+
+- Border-radius: https://www.youtube.com/watch?v=wBGPRZ7tX50
+
+- Fondos degradados: https://www.youtube.com/watch?v=U9RVZhg6iXk
+
+- Linear Gradients: https://www.youtube.com/watch?v=abAtvrULrUQ
+
+- Diseño adaptable varios dispositivos: https://www.youtube.com/watch?v=yWW8pzPFT1U
+
+- Menú Responsive: https://www.kidoestudio.com/blog/menu-responsive-sencillo/
+
+- Columnas Responsive: https://www.campusmvp.es/recursos/post/columnas-responsive-html5-css3.aspx
+
+- Modernizr: https://www.youtube.com/watch?v=xzVJt-9IYxg
+
+- Normalize.css: https://www.youtube.com/watch?v=7vEKcrVY518
+
+- Propiedad Transform: https://www.youtube.com/watch?v=QC_jE5hZTQs
+
+- Transiciones: https://www.youtube.com/watch?v=gXPKJSJMr_k
+
+- Juego para practicar flexbox: https://flexboxfroggy.com/#es
+
+- Juego para practicar grid: https://cssgridgarden.com/#es
+
+
+
+
+
+
+
