@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 6</title>
+    <link rel="StyleSheet" href="Ejemplo6CSS.css" type="text/css">
 </head>
+
 <body>
     <!-- Definir en la hoja de estilo estas dos clases:
 
@@ -21,5 +24,13 @@ Luego, en la página html, definir un título con nivel h1 (subrayar todo el
 título). Seguidamente un párrafo que tenga algunas palabras subrayadas y 
 otras tachadas (utilizar el elemento span para asignar estilos a una palabra)-->
 
+    <h1 class="subrayado">Texto importante</h1>
+    <p><span class="tachado">Texto que debo corregir (Idea del proyecto)</span>
+        <span class="subrayado">Esta parte debo añadirla si o si.</span>
+    </p>
+    <p><div class="tachado">Texto que debo corregir (Idea del proyecto)</div>
+        <div class="subrayado">Esta parte debo añadirla si o si.</div>
+    </p>
 </body>
+
 </html>

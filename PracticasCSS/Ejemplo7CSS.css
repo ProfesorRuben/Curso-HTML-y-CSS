@@ -1,0 +1,28 @@
+/*Definir tres estilos de tipo id (cabecera, cuerpo y pie), luego definir 
+        en el archivo HTML tres areas (div) inicializando el atributo id con los 
+        nombres de reglas de estilo creados*/
+
+
+        #cabecera{
+            color:chocolate;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+
+        #cuerpo{
+            color:blue;
+            text-align: justify;
+            font-size: medium;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #pie{
+            color: chartreuse;
+            text-decoration-color: aqua;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
