@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+/*Ejemplo 1: Crear un vector para almacenar los cinco sueldos de operarios y 
+luego mostrar el total de gastos en sueldos (cada actividad en una función)*/ 
+        
+    function addSueldos(sueldos){
+        for(i=0;i<sueldos.length;i++){
+            valor=prompt("Escriba el sueldo: ");
+            sueldos[i]=parseInt(valor);
+        }
+    }
+
+    sueldos = new Array(5);
+    addSueldos(sueldos);
+    document.write(sueldos[1]);
+    </script>
+</body>
+</html>
