@@ -20,10 +20,14 @@ se hace cuando se crea una password para el ingreso a un sitio o para el cambio 
 una existente).
 Tener en cuenta que podemos emplear el operador == para ver si dos string son iguales.*/
         function comprueba(){
-            let var1= document.getElementById("contra1".innerHTML=this.value);
+            let var1= document.getElementById('contra1').value;
             
-            let var2= document.getElementById("contra2");
-            document.write(var1);
+            let var2= document.getElementById('contra2').value;
+            if(var1===var2){
+                alert('Las dos claves ingresadas son iguales');
+            } else {
+                alert('Las dos claves ingresadas son distintas');
+            }
         }
 
 
