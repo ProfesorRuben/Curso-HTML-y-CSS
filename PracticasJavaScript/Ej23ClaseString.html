@@ -12,7 +12,14 @@
 sin contemplar mayúsculas ni minúsculas. Es decir que para salir se pueda teclear fin, 
 Fin o FIN. Mostrar cuántos nombres se ingresaron.*/
 
+        let palabra="";
+        let contador=0;
+        while (palabra.toLowerCase()!='fin'){
+            palabra=prompt("Escribe una palabra");
+            contador++;
+        }
 
+        document.write("Se han escrito ",contador," nombres.");
     </script>
 </body>
 </html>
