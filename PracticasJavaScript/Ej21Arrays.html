@@ -18,9 +18,27 @@ luego mostrar el total de gastos en sueldos (cada actividad en una función)*/
         }
     }
 
+    function muestraSueldos(sueldos){
+        document.write("<br><br>Los sueldos con bucle for son:");
+        for (let index = 0; index < sueldos.length; index++) {
+            document.write("</br>"+sueldos[index]);
+        }
+    }
+
+    function muestraSueldosConFore(sueldos){
+        document.write("<br><br>Los sueldos con bucle for each son:");
+        sueldos.forEach(element => {
+            document.write("</br>"+element);
+        });
+    }
     sueldos = new Array(5);
     addSueldos(sueldos);
-    document.write(sueldos[1]);
+    
+    document.write("El sueldo de la posición -1 es:"+sueldos[-1]);
+    document.write("</br>El sueldo de la posición 0 es:"+sueldos[0]);
+    
+    muestraSueldos(sueldos);
+    muestraSueldosConFore(sueldos);
     </script>
 </body>
 </html>
