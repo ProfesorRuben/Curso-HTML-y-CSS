@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form target="_blank" action="Result.html" method="get">
+        Nombre:<input type="text" name="user" size="5" maxlength="30" required>
+        <p>
+        Contraseña:<input type="text" name="pass" size="15" maxlength="30">
+        <p>
+        Comentarios:
+        <br>
+        <textarea name="Comentarios" cols="30" rows="10"></textarea>
+
+        <!-- </br>Selecciona tus intereses:</br>
+        <input name="cbipeliculas" type="checkbox" />Películas</br>
+        <input name="cbilibros" type="checkbox" />Libros</br>
+        <input name="cbiinternet" type="checkbox" checked="checked"/>Internet -->
+
+    <!-- </br>Selecciona tu actividad favorita:</br>
+        <input name="intereses" type="radio" value="rbipeliculas" />Películas</br>
+        <input name="intereses" type="radio" value="rbilibros" />Libros</br>
+        <input name="intereses" type="radio" value="rbiinternet" checked="checked" />Internet
+        -->
+
+        <fieldset>
+            <legend>Información Personal</legend>
+            Nombre: <input name='nombre' type='text'>
+            Apellidos: <input name='apellidos' type='text'>
+           </fieldset>
+          
+           <fieldset>
+            <legend>edad</legend>
+            <input type='checkbox' name='edad' value='20-39'> 20-39
+            <input type='checkbox' name='edad' value='40-59'> 40-59
+            <input type='checkbox' name='edad' value='60-79'> 60-79
+           </fieldset>
+       
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Borrar"><p>
+        </form>
+</body>
+</html>

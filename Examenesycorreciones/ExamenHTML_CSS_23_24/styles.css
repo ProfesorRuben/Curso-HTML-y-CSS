@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'JetBrainsMono-Regular';
+    src: url('fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  p{font-family: 'JetBrainsMono-Regular';}
+  div{font-family: 'RobotoCondensed-Regular';}
