@@ -1,0 +1,31 @@
+body {
+  background-image: url(img/calen.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center; /* así centro la imagen de fondo */
+}
+
+.atras {
+  width: 50px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  transition: transform 0.2s;
+}
+
+.atras:hover {
+  transform: scale(1.1);
+}
+
+.cal {
+  width: 1000px;
+  display: block;
+  margin: auto;
+  border: 10px dashed #408b1c;
+}
+.ruiz {
+  width: 200px;
+  display: block;
+  margin: auto;
+}

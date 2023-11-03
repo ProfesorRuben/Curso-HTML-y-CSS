@@ -1,0 +1,49 @@
+body {
+  background-image: url(img/bici.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center; /* así centro la imagen de fondo */
+}
+
+.atras {
+  width: 50px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  transition: transform 0.2s;
+}
+
+.atras:hover {
+  transform: scale(1.1);
+}
+
+table {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 40px;
+}
+
+td, th {
+  background-color: rgba(255, 255, 255, 0.823);
+  border-radius: 50px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  padding: 30px;
+}
+
+caption {
+  font-size: 55px;
+  text-shadow: -2px -2px 7px rgb(0, 0, 0);
+  color: #ffffff;
+  margin: 2%;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, serif;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: square;
+}

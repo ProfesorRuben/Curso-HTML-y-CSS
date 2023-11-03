@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "refresh" content = "7; url = index.html" />
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Lista Numerada en Tabla</title>
+<style>
+      .numerada { /*.numera es un identificador*/
+    counter-reset: item; /* para inicializar el contador */
+}
+      
+      .numerada td:first-child::before { /*td para poner a que tipo afecta, ::before para agregar los números de la lista en las celdas de la primera columna de la tabla*/
+    content: counter(item) "."; /*Pone un punto despues de los números*/
+    counter-increment: item; /*incrementa los números "item"*/
+    display: inline-block; /*De aqui para abajo son opciones del número*/
+    width: 1em;
+    text-align: right; 
+    margin-right: 0.5em; 
+}
+
+      table {
+    border-collapse: collapse; /*colapsar los borde de la tabla para que se vea como una sola línea*/
+    width: 50%; /*Tamaño de la tabla*/
+}
+
+      table, th, td{
+    border:1px solid black; /*Color del borde del la línea*/
+}
+
+      table {
+    font-size: 25px; /*tamaño de la letra de la tabla*/
+}
+
+      tr:first-child {
+            background-color: lightgrey;
+            color: black;
+}
+
+        tr:nth-child(n+2):nth-child(-n+8) {
+            background-color: lightgoldenrodyellow;
+            color:black
+}
+
+
+
+      body{
+        font-family: Verdana;  /*Cambiar la tipografía del body*/
+}
+
+      body{
+        background-color: lightblue; /*Color del fondo*/
+      }
+
+      body{
+        font-size: 25px;  /*Cambia el tamaño de las letras del body*/
+}
+
+
+      .comida{
+        font-size: 40px;
+      }
+      
+</style>
+    </head>
+
+    <body>
+
+
+  </p><center><h1><u><i>MIS HOBBIES DE VÍCTOR MARÍN</i></u></h1></center></p> <!--Título-->
+        </br>
+        </br>
+    
+
+      <center><table class="numerada"> <!--Tabla de mis hobbies-->
+
+        <tr> 
+          <th>Hobbies</th>
+          <th>Cuando lo practico</th>
+        </tr>
+
+        <tr>
+          <td>Ir al gym</td>
+          <td>De lunes a viernes de 8 hasta que termine</td>
+        </tr>
+
+        <tr>
+          <td>Jugar a videojuegos</td>
+          <td>Cuando tengo tiempo</td>
+        </tr>
+
+        <tr>
+            <td>Quedar con mis amigos</td>
+            <td>Cuando dicen de quedar</td>
+        </tr>
+
+        <tr>
+            <td>Ir a caminar por el bosque</td>
+            <td>Todos los fin de semana</td>
+        </tr>
+
+        <tr>
+            <td>Jugar a juegos de mesa</td>
+            <td>Cuando estoy con mis amigos o familia</td>
+        </tr>
+
+        <tr>
+            <td>Reparar ordenadores</td>
+            <td>Cuando tengo algun ordenador estropeado</td>
+        </tr>
+
+        <tr>
+            <td>Cocinar</td>
+            <td>Siempre</td>
+        </tr>
+
+
+
+      </table></center>
+</br>
+</br>
+</br>
+<h2><u>Comidas que me gustan</u></h2>
+
+      <table class="comida">
+        <tr>
+          <td>
+            <ul>
+              <li>Espaguetis a la carbonara</li>
+              <li>Pizza</li>
+              <li>Lasaña</li>
+              <li>Filetes de lomo</li>
+              <li>Ensaladilla rusa</li>
+            </ul>
+          </td> 
+        </tr>
+      </table>
+
+      
+
+    </body>
+    </html>
